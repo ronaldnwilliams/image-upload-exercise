@@ -18,5 +18,5 @@ function saveImage(imageFile) {
 ## To Run  
 `mkdir image-upload-exercise`  
 `cd image-upload-exercise`  
-`git https://github.com/ronaldnwilliams/image-upload-exercise.git`  
+`git clone https://github.com/ronaldnwilliams/image-upload-exercise.git`  
 `open index.html`  
