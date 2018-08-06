@@ -10,6 +10,7 @@ class ImageUpload extends React.Component {
       file: ''
     }
     this.handleChange = this.handleChange.bind(this);
+    this.handlePreview = this.handlePreview.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -20,17 +21,30 @@ class ImageUpload extends React.Component {
     })
   }
 
+  handlePreview(e) {
+    e.preventDefault();
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     console.log(e.target);
   }
 
   render() {
+    // Create a preview button if user selects a file else helpful text
     let previewButton = this.state.fileSelected ? 
-      React.createElement('button',
-      { type: 'submit', onClick: this.handleSubmit },
-      'Print Preview') : 
+      React.createElement(
+        'button',
+        { type: 'submit', onClick: this.handlePreview },
+        'Print Preview') : 
       React.createElement('p', {}, 'Select an image to uplaod');
+
+    // Create a submit button if user selects a file else nothing
+    let submitButton = this.state.fileSelected ? 
+      React.createElement(
+        'button',
+        { type: 'submit', onClick: this.handleSubmit },
+        'Upload') : '';
 
     return React.createElement(
       'form',
@@ -39,6 +53,7 @@ class ImageUpload extends React.Component {
         'input',
         {type: 'file', accept: 'image/*', onChange: this.handleChange }),
       previewButton,
+      submitButton,
     );
   }
 }
