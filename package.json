@@ -1,0 +1,24 @@
+{
+  "name": "image-upload-exercise",
+  "version": "1.0.0",
+  "description": "**Goal:** Create an input component that allows a user to upload an image, crop it to a size determined by the user, save the cropped image to an API, and then view the saved image.",
+  "main": "image_upload_form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldnwilliams/image-upload-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronaldnwilliams/image-upload-exercise/issues"
+  },
+  "homepage": "https://github.com/ronaldnwilliams/image-upload-exercise#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
+}
