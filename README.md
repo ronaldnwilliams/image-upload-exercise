@@ -16,7 +16,6 @@ function saveImage(imageFile) {
 * There should be a button called "Print Preview". When clicked it should open a new tab, print a page which has the new image centered at the top, and then close the tab after printing. If no image has been saved then the button should be disabled. The displayed image should be no higher than 100px.  
 
 ## To Run  
-`mkdir image-upload-exercise`  
-`cd image-upload-exercise`  
 `git clone https://github.com/ronaldnwilliams/image-upload-exercise.git`  
+`cd image-upload-exercise`  
 `open index.html`  
